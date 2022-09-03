@@ -1,0 +1,10 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @micropst %>
+
+<div>
+  <%= link_to "Edit this micropst", edit_micropst_path(@micropst) %> |
+  <%= link_to "Back to micropsts", micropsts_path %>
+
+  <%= button_to "Destroy this micropst", @micropst, method: :delete %>
+</div>

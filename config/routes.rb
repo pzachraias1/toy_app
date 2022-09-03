@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :micropsts
   resources :users
-  root 'application#hello'
+  root 'users#index'
 end
